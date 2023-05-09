@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.3",
     "@react-spring/parallax": "^9.7.2",
     "dotenv": "^16.0.3",
     "framer-motion": "^10.0.2",
