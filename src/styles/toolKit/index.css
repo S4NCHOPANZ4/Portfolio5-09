@@ -1,0 +1,172 @@
+@keyframes color-change-bg {
+  0% {
+    background: #19dcea;
+  }
+  50% {
+    background: #b22cff;
+  }
+  100% {
+    background: #ea2222;
+  }
+}
+@keyframes color-change-names {
+  0% {
+    color: #19dcea;
+  }
+  50% {
+    color: #b22cff;
+  }
+  100% {
+    color: #ea2222;
+  }
+}
+@keyframes color-change-border {
+  0% {
+    border-color: #19dcea;
+  }
+  50% {
+    border-color: #b22cff;
+  }
+  100% {
+    border-color: #ea2222;
+  }
+}
+.Toolkit__super {
+  height: 60vh;
+  width: 70vw;
+  margin: auto;
+  border-radius: 10px;
+  justify-content: center;
+}
+@media screen and (max-width: 920px) {
+  .Toolkit__super {
+    max-width: 20rem;
+    margin-top: 5rem;
+  }
+}
+
+.Toolkit_Container {
+  margin: auto;
+  max-width: 70rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80%;
+}
+@media screen and (max-width: 920px) {
+  .Toolkit_Container {
+    max-width: 20rem;
+  }
+}
+
+.Toolkit_SubContainer {
+  width: 100%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 0px;
+  grid-template-areas: ". . . ." ". . . .";
+}
+@media screen and (max-width: 920px) {
+  .Toolkit_SubContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: ". ." ". ." ". .";
+  }
+}
+
+.ToolKit_grid {
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  place-self: center;
+  cursor: pointer;
+}
+@media screen and (max-width: 920px) {
+  .ToolKit_grid {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.grid1 {
+  background-image: url("../../assets/svg/javascript.svg");
+  background-size: contain;
+  border-radius: 5px;
+}
+
+.grid2 {
+  background-image: url("../../assets/svg/Typescript_logo.svg");
+  background-size: contain;
+}
+
+.grid3 {
+  background-image: url("../../assets/svg/sass.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid4 {
+  background-image: url("../../assets/svg/node-js.svg");
+  background-size: contain;
+}
+
+.grid5 {
+  background-image: url("../../assets/svg/React-icon.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid6 {
+  background-image: url("../../assets/svg/firebase.svg");
+  background-size: contain;
+}
+
+.grid7 {
+  background-image: url("../../assets/svg/git.svg");
+  background-size: contain;
+}
+
+.grid8 {
+  background-image: url("../../assets/svg/mongodb-icon.svg");
+  background-size: contain;
+}
+
+.toolkit_tt {
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toolkit_tt .toolkit_t {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  animation: color-change-names 5s linear infinite alternate both;
+}
+@media screen and (max-width: 920px) {
+  .toolkit_tt .toolkit_t {
+    font-size: 1.5rem;
+  }
+}
+
+.ToolKit_dm_c {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.ToolKit_dm_c .Toolkit_dragMe {
+  margin-right: 20px;
+  color: rgb(91, 91, 91);
+  border-radius: 30px;
+  padding: 7px 12px;
+  font-family: "Gochi Hand", cursive;
+  font-size: 1.2rem;
+  text-align: right;
+}/*# sourceMappingURL=index.css.map */
