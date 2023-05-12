@@ -209,4 +209,22 @@
     background-position: center;
     background-size: cover;
   }
+}
+
+.part3 {
+  background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_3.svg");
+  background-position: center;
+  background-size: cover;
+}
+.part3:hover {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8392156863), transparent), url("../../assets/svg-p/project_3.svg");
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (max-width: 920px) {
+  .part3 {
+    background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_3.svg");
+    background-position: center;
+    background-size: cover;
+  }
 }/*# sourceMappingURL=index.css.map */

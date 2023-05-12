@@ -167,3 +167,18 @@ $cube_sizes_Rw: 4rem;
         background-size: cover;
     }
 }
+.part3{
+    background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_3.svg");
+    background-position: center;
+    background-size: cover;
+    &:hover{
+        background: linear-gradient(to bottom, #000000d6, transparent), url("../../assets/svg-p/project_3.svg");
+        background-position: center;
+        background-size: cover;
+    }
+    @include tablet{
+        background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_3.svg");
+        background-position: center;
+        background-size: cover;
+    }
+}

@@ -137,11 +137,13 @@ const goToGitHub = (deployment) => {
             className='projects_container_part part3'>
             <div className='part_hover'>
                     <p className='project_desc'>
-                   Web application that uses <span className='project_resalted'>NASA's API</span> , <span className='project_resalted'>React</span> , and <span className='project_resalted'>Typescript</span> to provide users with an interactive and educational way to explore the Earth. The application utilizes NASA's satellite imagery to provide a unique and stunning view of our planet.
+                    Image to ASCII Converter: uses <span className='project_resalted'>React</span> , and <span className='project_resalted'>html2canvas</span>.<br/>
+                    "Convert your images into ASCII art effortlessly. Enjoy the charm of ASCII art and give your pictures a retro touch."
                     </p>
                     <div className='buttons_hover'>
 
                     <div 
+                    onClick={()=>{goToDemo("ascii-converter-sepia")}} 
                     className='hover_cirle part_button'>
                         <motion.div 
                         className='sub_icon'
@@ -150,7 +152,9 @@ const goToGitHub = (deployment) => {
                             <OpenInNewIcon  className='part_icon'/>
                         </motion.div>
                     </div>
-                    <div className='hover_cirle part_button'>
+                    <div 
+                    onClick={()=>{goToGitHub("S4NCHOPANZ4/ASCII-converter")}} 
+                    className='hover_cirle part_button'>
                         <motion.div
                         className='sub_icon'
                         variants={divVariants}
