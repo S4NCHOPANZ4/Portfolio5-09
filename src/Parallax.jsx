@@ -8,7 +8,6 @@ import Backgroundc from './components/Backgroundc';
 import sep from './assets/svg-bg/sep.svg'
 import sep2 from './assets/svg-bg/sep2.svg'
 
-import './styles/parallax/index.css'
 
 const ParallaxC = () => {
   const ref = useRef();
