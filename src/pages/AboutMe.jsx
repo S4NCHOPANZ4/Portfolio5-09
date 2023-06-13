@@ -1,9 +1,13 @@
 import React from 'react'
 import AnimatedText from '../components/AnimatedText'
 import { motion } from "framer-motion";
+import IconMe from '../assets/svg-bg/drawing.svg'
 //MUI
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
+//pdf
+import resume from '../assets/resume/Juan_Buitrago.pdf'
 
 import '../styles/aboutMe/index.css'
 
@@ -11,6 +15,11 @@ import '../styles/aboutMe/index.css'
 
 
 const AboutMe = () => {  
+
+
+  const handleOpenPDF = () => {
+    window.open(resume, '_blank');
+  };
 
   const goToLinkIn = () => {
     window.open(`https://www.linkedin.com/in/juan-buitrago-047a4a206/`, '_blank')
@@ -44,7 +53,7 @@ const AboutMe = () => {
       <div className='aboutMe_title'>
         <AnimatedText 
         clase={'AboutMe_title_cc'}
-        text={'< About Me />'}/>
+        text={'About Me 🐵'}/>
       </div>
       <div className='aboutMe_body'>
         <motion.div
@@ -63,12 +72,14 @@ const AboutMe = () => {
                 When I'm not developing, you can find me exploring new technologies, playing video games, and cooking up a storm
                 <span className='extra_txt'>{` (not literally) `}</span>
                 . I'm always looking for ways to stay creative and bring fresh ideas to my work.
+                <br/>
+                <a onClick={handleOpenPDF}>Check out my resume!</a>  
               </p>
           </div>
           <div className='aboutMe_cont'>
             <motion.button variants={buttonVariants} whileHover="hovered" onClick={()=>{goToLinkIn()}}><LinkedInIcon className='linkIn_Icon'/></motion.button>
             <motion.button variants={buttonVariants} whileHover="hovered" onClick={()=>{goToGitHub()}}><GitHubIcon className='linkIn_Icon'/></motion.button>
-
+            <motion.button variants={buttonVariants} whileHover="hovered" onClick={()=>{handleOpenPDF()}}><InsertDriveFileIcon className='linkIn_Icon'/></motion.button>            
           </div>
             
         </motion.div>
@@ -76,7 +87,7 @@ const AboutMe = () => {
           <motion.div   variants={cardVariants}
           initial="offscreen"
           whileInView="onscreen"  className='img_container'>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541" alt="" />
+            <img src={IconMe} alt="" />
           </motion.div>
         </div>
       </div>

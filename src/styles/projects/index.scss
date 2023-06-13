@@ -1,38 +1,137 @@
 @import '../media-queries';
-@keyframes color-change-bg{0%{background:#19dcea}50%{background:#b22cff}100%{background:#ea2222}}
-@keyframes color-change-names{0%{color:#19dcea}50%{color:#b22cff}100%{color:#ea2222}}
-@keyframes color-change-border{0%{border-color:#19dcea}50%{border-color:#b22cff}100%{border-color:#ea2222}}
+
 $cube_sizes_h: 9.5rem;
 $cube_sizes_w: 9rem;
 $cube_sizes_Rh: 4.5rem;
 $cube_sizes_Rw: 4rem;
 
 .projects__super{
+    height: 100%;
     width: 99vw;
-    height: 70vh;
-    margin: auto; 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 10rem;
     @include tablet{
-    margin-top: 3rem;
      
     }
 }
+.Projects_title_cc{
+    font-weight: 700;
+    font-size: 2rem;
+    animation:color-change-names 3s linear infinite alternate both;
 
-.projects__container{
-    width: 90%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     @include tablet{
-        height: 70%;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
+        margin: 0;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+// .projects__container{
+//     width: 90%;
+//     height: 100%;
+//     display: flex;
+//     justify-content: space-evenly;
+//     align-items: center;
+//     @include tablet{
+//         height: 70%;
+//         justify-content: space-between;
+//         align-items: center;
+//         flex-direction: column;
+//     }
+// }
+.projects__container{
+    display: grid;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60%;
+    width: 100%;
+    @include tablet{
+       flex-direction: column;
+        margin-top: 20px;
+    }
+    .try{
+        cursor: pointer;
+        min-width: 300px;
+        max-width: 400px;
+        height: 320px;
+        position: relative;
+        &:hover{
+            .background_p{
+                animation:color-change-bg 3s linear infinite alternate both;
+                transition: .2s ease;
+
+            }
+        }
+        @include tablet{
+            min-width: 90vw;
+            height: 180px;
+
+        }
+        .button_cont_p{
+            display: flex;
+            flex-direction: column;
+            z-index: 2;
+            position: absolute;
+            left: 3%;
+            button{
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                padding: 5px;
+                animation: none;
+                background-color: rgba(0, 0, 0, 0.507);
+                margin-top: 5px;
+                &:hover{
+                    color: #e56c102e;
+                }
+                @include tablet{
+                    padding: 15px;
+
+                 }
+                
+            }
+        }
+        .background_p{
+            -webkit-transition: all 1s ease;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: rgba(180, 115, 51, 0.275);
+            left: 54%;
+            top: 55%;
+            transform: translate(-50%, -50%);
+            border-radius: 2px;
+            @include tablet{
+               left: 51%;
+               top: 52%;
+    
+            }
+        }
+        @include tablet{
+            flex-direction: column;
+           }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+            -webkit-transition: all 1s ease;
+            &:hover{
+                filter: grayscale(0%);
+                filter: gray;
+                -webkit-filter: grayscale(0%);
+                filter: none;
+                transform: scale(1.01);
+                transition: .2s ease;
+            }
+        }
     }
 }
 
@@ -138,16 +237,16 @@ $cube_sizes_Rw: 4rem;
     height: 100%;
 }
 .part1{
-    background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_1.svg");
+    background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_1.png");
     background-position: center;
     background-size: cover;
     &:hover{
-        background: linear-gradient(to bottom, #000000d6, transparent), url("../../assets/svg-p/project_1.svg");
+        background: linear-gradient(to bottom, #000000d6, transparent), url("../../assets/svg-p/project_1.png");
         background-position: center;
         background-size: cover;
     }
     @include tablet{
-        background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_1S.svg");
+        background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_1.png");
         background-position: center;
         background-size: cover;
     }
@@ -168,16 +267,16 @@ $cube_sizes_Rw: 4rem;
     }
 }
 .part3{
-    background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_3.svg");
+    background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_3.png");
     background-position: center;
     background-size: cover;
     &:hover{
-        background: linear-gradient(to bottom, #000000d6, transparent), url("../../assets/svg-p/project_3.svg");
+        background: linear-gradient(to bottom, #000000d6, transparent), url("../../assets/svg-p/project_3.png");
         background-position: center;
         background-size: cover;
     }
     @include tablet{
-        background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_3.svg");
+        background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_3.png");
         background-position: center;
         background-size: cover;
     }

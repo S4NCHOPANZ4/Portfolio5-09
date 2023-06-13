@@ -5,8 +5,10 @@ import AboutMe from './pages/AboutMe';
 import Toolkit from './pages/Toolkit';
 import Form from './pages/Form';
 import Backgroundc from './components/Backgroundc';
+import sep from './assets/svg-bg/sep.svg'
+import sep2 from './assets/svg-bg/sep2.svg'
 
-import './styles/Parallax/index.css'
+import './styles/parallax/index.css'
 
 const ParallaxC = () => {
   const ref = useRef();
@@ -20,7 +22,9 @@ const ParallaxC = () => {
 
   return (
     <>
-      <Parallax  pages={5} ref={ref}>
+     
+      <Parallax  className='super_parallax' pages={5} ref={ref}
+     >
       <div className='NavBar'>
         <div>
           <p
@@ -41,13 +45,20 @@ const ParallaxC = () => {
 
         <Backgroundc/>
         <ParallaxLayer 
-        style={{backgroundColor: 'black'}}
-        offset={1}>
+        className='projects_parallax'
+        style={{background: '#F1E5DE'}}
+        offset={1}
+        factor={1}
+        >
              <Projects/>
+ 
         </ParallaxLayer>
         <ParallaxLayer 
-        style={{backgroundColor: 'black'}}
+        style={{background: '#FAFAFA'}}
         offset={2}>
+          <div className='toolkit_img_sep'>
+            <img src={sep} alt="" />
+          </div>
         <div style={stylesCenter}>
 
             <Toolkit/>
@@ -55,13 +66,16 @@ const ParallaxC = () => {
 
         </ParallaxLayer>
         <ParallaxLayer 
-        style={{backgroundColor: '#191919'}}
+        style={{backgroundColor: '#FAFAFA'}}
         offset={3}>
              <AboutMe/>
         </ParallaxLayer>
         <ParallaxLayer
-        style={{backgroundColor: 'black'}}
+        style={{backgroundColor: '#4f220e16'}}
         offset={4}>
+        <div className='toolkit_img_sep'>
+            <img src={sep2} alt="" />
+          </div>
             <div style={stylesCenter}>
                 <Form/>
             </div>

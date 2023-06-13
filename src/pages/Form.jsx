@@ -6,6 +6,11 @@ import AnimatedText from '../components/AnimatedText';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import LocalPostOfficeIcon from '@mui/icons-material/LocalPostOffice';
+import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
+
+//pdf
+import resume from '../assets/resume/Juan_Buitrago.pdf'
+
 //Motion
 import { motion } from 'framer-motion'
 
@@ -59,6 +64,10 @@ const Form = () => {
   const goToGitHub = (deployment) => {
   window.open(`https://github.com/S4NCHOPANZ4`, '_blank')
   }
+  const goToResume = () => {
+    window.open(resume, '_blank');
+  }
+
 
   const cardVariants = {
     offscreen: {
@@ -77,12 +86,14 @@ const Form = () => {
   return (
     <div className="form_container">
       <div className="form_sub contact">
-        <AnimatedText text={`< CONTACT ME />`} clase="title" />
+        <AnimatedText text={`CONTACT ME! 📞`} clase="title" />
         <AnimatedText text={`Let's Work Together!`} clase="lets" />
         <p className='c_mail'>📧 buitr4go@gmail.com</p>
         <div className='contact_icons upper_icons'>
           <GitHubIcon className='contact_icon' onClick={()=>{goToGitHub()}}/>
           <LinkedInIcon className='contact_icon' onClick={()=>{goToLinkIn()}}/>
+          <InsertDriveFileIcon className='contact_icon' onClick={()=>{goToResume()}}/>
+
         </div>
       </div>
       <>{sent? 
@@ -133,6 +144,7 @@ const Form = () => {
           <div className='contact_icons lower_icons'>
           <GitHubIcon className='contact_icon' onClick={()=>{goToGitHub()}}/>
           <LinkedInIcon className='contact_icon' onClick={()=>{goToLinkIn()}}/>
+          <InsertDriveFileIcon className='contact_icon' onClick={()=>{goToResume()}}/>
          </div>
           </form>
           

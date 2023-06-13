@@ -7,6 +7,9 @@ import { motion } from "framer-motion";
 //img
 import '../styles/projects/index.css'
 import AnimatedText from '../components/AnimatedText';
+import p1 from '../assets/svg-p/project_1.png'
+import p2 from '../assets/svg-p/project_2.png'
+import p3 from '../assets/svg-p/project_3.png'
 
 
 const divVariants = {
@@ -39,6 +42,25 @@ const Projects = () => {
         }
       };
 
+const proyects = [
+  {
+  bg: p1,
+  demo: 'nasa-ap-is-cheks',
+  github: "S4NCHOPANZ4/NASA_APIs-cheks"
+  },
+  {
+    bg: p2,
+    demo: 'lol-tracker-v1-7kutrzrhm-buitr4go-gmailcom',
+    github: "S4NCHOPANZ4/RiotAPi"
+  },
+  {
+    bg: p3,
+    demo: 'nasa-ap-is-cheks',
+    github: "S4NCHOPANZ4/ASCII-converter"
+  }
+]
+
+
 const goToDemo = (deployment, urlplus) => {
         window.open(`https://${deployment}.vercel.app${urlplus? urlplus: ''}`, '_blank')
 }
@@ -52,11 +74,44 @@ const goToGitHub = (deployment) => {
     <div className='projects__super'>
       <div className='aboutMe_title'>
         <AnimatedText
-        clase={'AboutMe_title_cc'}
-        text={'< My Projects />'}/>
+        clase={'Projects_title_cc'}
+        text={'My Projects  📄'}/>
       </div>
         <div className='projects__container'>
+
+          {proyects.map((proyect, index)=>{
+            return(  
             <motion.div 
+            onClick={()=>{
+              goToDemo(proyect.demo)
+            }}
+              key={index}
+              variants={cardVariants}
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true }}
+             className='try'>
+               <div className='button_cont_p'>
+                 <button
+                 onClick={()=>{
+                  goToDemo(proyect.demo)
+                 }}
+                 ><OpenInNewIcon/></button>
+                 <button
+                 onClick={()=>{
+                  goToGitHub(proyect.github)
+                 }}
+                 ><GitHubIcon/></button>
+               </div>
+               <div className='background_p'></div>
+               <img src={proyect.bg} alt="" />
+             </motion.div>
+             )
+           
+          })}
+           
+   
+            {/* <motion.div 
             variants={cardVariants}
              initial="offscreen"
              whileInView="onscreen"
@@ -165,7 +220,7 @@ const goToGitHub = (deployment) => {
                     </div>
 
                 </div>
-            </motion.div>
+            </motion.div> */}
         </div>
 
     </div>

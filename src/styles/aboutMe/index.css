@@ -40,12 +40,6 @@
   margin: auto;
   flex-direction: column;
 }
-@media screen and (max-width: 920px) {
-  .aboutMe_super {
-    height: auto;
-  }
-}
-
 .aboutMe_body {
   position: relative;
   display: flex;
@@ -55,6 +49,7 @@
 @media screen and (max-width: 920px) {
   .aboutMe_body {
     flex-direction: column;
+    height: 80vh;
   }
 }
 
@@ -79,6 +74,7 @@
   }
 }
 .aboutMe_sub1 .aboutMe_cont button {
+  margin: 0;
   animation: none;
   background-color: transparent;
 }
@@ -86,9 +82,6 @@
   height: 2rem;
   width: 2rem;
   color: gray;
-}
-.aboutMe_sub1 .aboutMe_cont button .linkIn_Icon:hover {
-  color: white;
 }
 @media screen and (max-width: 920px) {
   .aboutMe_sub1 .aboutMe_cont button .linkIn_Icon {
@@ -117,12 +110,28 @@
     padding: 2rem 1rem;
   }
 }
+.aboutMe_sub1 a {
+  font-size: 1.2rem;
+  animation: color-change-names 5s linear infinite alternate both;
+  font-weight: 300;
+  cursor: pointer;
+}
+@media screen and (max-width: 920px) {
+  .aboutMe_sub1 a {
+    font-size: 1rem;
+  }
+}
 
 .aboutMe_contentT {
   display: flex;
   align-items: center;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 920px) {
+  .aboutMe_contentT {
+    width: 100vw;
+  }
 }
 
 .aboutMe_sub2 .img_container {
@@ -139,9 +148,7 @@
 @media screen and (max-width: 920px) {
   .aboutMe_sub2 .img_container {
     margin-left: 0;
-    margin-top: 40px;
-    max-width: 150px;
-    min-width: 70px;
+    max-width: 10px;
   }
 }
 .aboutMe_sub2 .img_container img {
@@ -170,6 +177,7 @@
 }
 @media screen and (max-width: 920px) {
   .aboutMe_title .AboutMe_title_cc {
+    margin-bottom: 2rem;
     font-size: 1.5rem;
   }
 }

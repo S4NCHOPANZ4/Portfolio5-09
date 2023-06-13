@@ -19,12 +19,13 @@ const generateGrid = () => {
 
   return (
     <div className='Toolkit__super'>
+
          <div className='toolkit_tt'>
         <AnimatedText
         clase={'toolkit_t'}
-        text={'< My ToolKit />'}/>
+        text={' My ToolKit 🔧'}/>
              <div className='ToolKit_dm_c'>
-              <p className='Toolkit_dragMe'>"Try dragging them"</p>
+              <p className='Toolkit_dragMe'>🫳 Try dragging them 🫳</p>
             </div>
       </div>
         <div className='Toolkit_Container'>

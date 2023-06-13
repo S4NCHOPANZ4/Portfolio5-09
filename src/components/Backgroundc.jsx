@@ -8,11 +8,15 @@ import bg1 from '../assets/svg-bg/bg-1.svg'
 import Cover from '../pages/Cover';
 
 const Backgroundc = () => {
+
+
   return (
     <>
+
         <ParallaxLayer offset={0}
         factor={1.2}
         speed={-.6}
+        
         style={{
             zIndex: '-2',
             backgroundImage: `url(${bg1})`,
@@ -31,6 +35,7 @@ const Backgroundc = () => {
             backgroundImage: `url(${bg2})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
+
         }}>
 
         </ParallaxLayer>
