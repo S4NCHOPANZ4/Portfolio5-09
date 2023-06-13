@@ -6,6 +6,7 @@ import ParallaxC from './Parallax'
 function App() {
 
   useEffect(()=>{
+    
   })
 
   return (
