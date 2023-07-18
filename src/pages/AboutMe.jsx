@@ -22,7 +22,7 @@ const AboutMe = () => {
   };
 
   const goToLinkIn = () => {
-    window.open(`https://www.linkedin.com/in/juan-buitrago-047a4a206/`, '_blank')
+    window.open(`https://www.linkedin.com/in/juan-d-buitrago/`, '_blank')
   }
   const goToGitHub = () => {
     window.open(`https://github.com/S4NCHOPANZ4`, '_blank')

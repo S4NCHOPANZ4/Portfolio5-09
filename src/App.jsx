@@ -13,7 +13,6 @@ function App() {
     window.onload = handleLoad;
     setTimeout(() => {
       setLoaded(true)
-
     }, 9000)
     return () => {
       window.onload = null;
