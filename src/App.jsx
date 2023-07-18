@@ -1,19 +1,12 @@
-import { useEffect } from 'react'
-import ParallaxC from './Parallax'
-
-
+import { useEffect } from "react";
+import ParallaxC from "./Parallax";
 
 function App() {
-
-  useEffect(()=>{
-    
-  })
-
   return (
     <>
-      <ParallaxC/>
+      <ParallaxC />
     </>
-      )
+  );
 }
 
-export default App
+export default App;

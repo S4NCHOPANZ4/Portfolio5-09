@@ -5,277 +5,336 @@ $cube_sizes_w: 9rem;
 $cube_sizes_Rh: 4.5rem;
 $cube_sizes_Rw: 4rem;
 
-.projects__super{
+
+
+
+
+
+
+
+
+
+// .parent {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-template-rows: repeat(4, 1fr);
+//     grid-column-gap: 0px;
+//     grid-row-gap: 0px;
+//     }
+
+//     .div1 { grid-area: 1 / 1 / 2 / 3; }
+//     .div2 { grid-area: 1 / 3 / 4 / 4; }
+//     .div3 { grid-area: 2 / 1 / 4 / 3; }
+//     .div4 { grid-area: 4 / 1 / 5 / 2; }
+//     .div5 { grid-area: 4 / 2 / 5 / 3; }
+.projects__super {
+    margin: auto;
     height: 100%;
-    width: 99vw;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    @include tablet{
-     
-    }
 }
-.Projects_title_cc{
-    font-weight: 700;
-    font-size: 2rem;
-    animation:color-change-names 3s linear infinite alternate both;
 
-    @include tablet{
+.Projects_title_cc {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    animation: color-change-names 3s linear infinite alternate both;
+
+    @include tablet {
         margin: 0;
         font-size: 1.5rem;
         margin-bottom: 2rem;
     }
 }
 
-// .projects__container{
-//     width: 90%;
-//     height: 100%;
-//     display: flex;
-//     justify-content: space-evenly;
-//     align-items: center;
-//     @include tablet{
-//         height: 70%;
-//         justify-content: space-between;
-//         align-items: center;
-//         flex-direction: column;
-//     }
-// }
-.projects__container{
+.projects__grid_container {
     display: grid;
-    gap: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 60%;
-    width: 100%;
-    @include tablet{
-       flex-direction: column;
-        margin-top: 20px;
-    }
-    .try{
-        cursor: pointer;
-        min-width: 300px;
-        max-width: 400px;
-        height: 320px;
-        position: relative;
-        &:hover{
-            .background_p{
-                animation:color-change-bg 3s linear infinite alternate both;
-                transition: .2s ease;
+    grid-template-columns: repeat(3, 260px);
+    grid-template-rows: repeat(4, 200px);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
 
-            }
-        }
-        @include tablet{
-            min-width: 90vw;
-            height: 180px;
-
-        }
-        .button_cont_p{
-            display: flex;
-            flex-direction: column;
-            z-index: 2;
-            position: absolute;
-            left: 3%;
-            button{
-                display: flex;
-                align-content: center;
-                justify-content: center;
-                padding: 5px;
-                animation: none;
-                background-color: rgba(0, 0, 0, 0.507);
-                margin-top: 5px;
-                &:hover{
-                    color: #e56c102e;
-                }
-                @include tablet{
-                    padding: 15px;
-
-                 }
-                
-            }
-        }
-        .background_p{
-            z-index: -1;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            background-color: rgba(180, 115, 51, 0.275);
-            left: 54%;
-            top: 55%;
-            transform: translate(-50%, -50%);
-            border-radius: 2px;
-            @include tablet{
-               left: 51%;
-               top: 52%;
-    
-            }
-        }
-        @include tablet{
-            flex-direction: column;
-           }
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 5px;
-            filter: grayscale(100%);
-            -webkit-filter: grayscale(100%);
-            &:hover{
-                filter: grayscale(0%);
-                filter: gray;
-                -webkit-filter: grayscale(0%);
-                filter: none;
-                transform: scale(1.01);
-                transition: .2s ease;
-            }
-        }
+    @include tablet {
+        grid-template-columns: repeat(1, 260px);
+        grid-template-rows: repeat(5, 200px);
     }
 }
 
-.projects_container_part{
-    width: 25rem;
-    height: 20rem;
-    border-radius: 15px;
-    background-color: #ffffff;
-    position: relative;
-    overflow: hidden;
-    &:hover{
-        & > .part_hover{
-                transform: translateY(-100%);
-            @include tablet{
-                transform: translateY(0%);;
-            }
-        }
+.project_card_1 {
+    grid-area: 1 / 1 / 2 / 3;
+    @include tablet {
+        grid-area: 1 / 1 / 2 / 2;
     }
-   .buttons_hover{
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
+}
 
-   }
-   .project_desc{
-    color: rgb(255, 255, 255);
-    padding: 20px;
-    text-align: center;
-    border-radius: 30px;
-    .project_resalted{
-        animation:color-change-names 5s linear infinite alternate both;
-        font-weight: 700;
-    }
-    @include tablet{
-        display: none;
-    }
-   }
-    .part_hover{
-        background-color: #141414a4;
-        height: 100%;
-        width: 100%;
-        top: 100%;
-        position: absolute;
-        transition: transform 250ms;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-evenly;
-     
-        .part_button{      
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            &:hover{
-                background-color: #ececec7e;
-            }
-            .part_icon{
-                color:  white;
-                animation:color-change-names 5s linear infinite alternate both;
-                height: 50%;
-                width: 50%;
-            }
-            @include tablet{
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-            }
-        }
-        .hover_cirle{
-            width: 4rem;
-            height: 4rem;
-            background-color: white;
-            border-radius: 100%;
-            @include tablet{
-                width: 4rem;
-                height: 4rem;
-                animation: none;
-            }
-        }
-        @include tablet{
-            position: relative;
-            width: 11rem;
-            background-color: transparent;
-            top: 0;
-        }
-    }
-    @include tablet{
-        width:90%;
-        height: 8rem;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
+.project_card_2 {
+    grid-area: 1 / 3 / 4 / 4;
+    @include tablet {
+        grid-area: 2 / 1 / 3 / 2;
     }
 }
-.part2{
-    margin: 5px;
+
+.project_card_3 {
+    grid-area: 2 / 1 / 4 / 3;
+    @include tablet {
+        grid-area: 3 / 1 / 4 / 2;
+    }
 }
-.sub_icon{
-    cursor: pointer;
+
+.project_card_4 {
+    grid-area: 4 / 1 / 5 / 2;
+    @include tablet {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+}
+
+.project_card_5 {
+    grid-area: 4 / 2 / 5 / 3;
+    @include tablet {
+        grid-area: 5 / 1 / 6 / 2; 
+    }
+}
+
+.project_card {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.07);
+
+        .project_desc {
+            height: 100%;
+            opacity: 1;
+        }
+
+        .toolkits {
+            opacity: 0;
+        }
+
+        .project_card_icon {
+            opacity: 0;
+        }
+    }
+
+    .project_desc {
+        display: flex;
+        width: 100%;
+        height: 0%;
+        transition: height 0.3s ease, opacity 0.3s ease;
+        opacity: 0;
+        background-color: rgba(255, 255, 255, 0.46);
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+
+        p {
+            font-weight: 400;
+            font-size: .9rem;
+            text-align: left;
+            width: 80%;
+        }
+
+        .project_links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 10%;
+
+            :first-child {
+                margin-bottom: 20px;
+            }
+
+            * {
+                cursor: pointer;
+
+            }
+        }
+    }
+
+    .toolkits {
+        max-width: 170px;
+        margin-top: 10px;
+        display: flexbox;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.3s ease;
+        opacity: 1;
+
+        .tools {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    .project_card_icon {
+        width: 60px;
+        height: 60px;
+        transition: opacity 0.3s ease;
+        opacity: 1;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
 }
-.part1{
-    background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_1.png");
-    background-position: center;
-    background-size: cover;
-    &:hover{
-        background: linear-gradient(to bottom, #000000d6, transparent), url("../../assets/svg-p/project_1.png");
-        background-position: center;
-        background-size: cover;
-    }
-    @include tablet{
-        background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_1.png");
-        background-position: center;
-        background-size: cover;
-    }
-}
-.part2{
-    background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_2.svg");
-    background-position: center;
-    background-size: cover;
-    &:hover{
-        background: linear-gradient(to bottom, #000000d6, transparent), url("../../assets/svg-p/project_2.svg");
-        background-position: center;
-        background-size: cover;
-    }
-    @include tablet{
-        background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_2.svg");
-        background-position: center;
-        background-size: cover;
-    }
-}
-.part3{
-    background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_3.png");
-    background-position: center;
-    background-size: cover;
-    &:hover{
-        background: linear-gradient(to bottom, #000000d6, transparent), url("../../assets/svg-p/project_3.png");
-        background-position: center;
-        background-size: cover;
-    }
-    @include tablet{
-        background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_3.png");
-        background-position: center;
-        background-size: cover;
-    }
-}
+
+
+// .projects_container_part{
+//     width: 25rem;
+//     height: 20rem;
+//     border-radius: 15px;
+//     background-color: #ffffff;
+//     position: relative;
+//     overflow: hidden;
+//     &:hover{
+//         & > .part_hover{
+//                 transform: translateY(-100%);
+//             @include tablet{
+//                 transform: translateY(0%);;
+//             }
+//         }
+//     }
+//    .buttons_hover{
+//     display: flex;
+//     width: 100%;
+//     justify-content: space-evenly;
+
+//    }
+//    .project_desc{
+//     color: rgb(255, 255, 255);
+//     padding: 20px;
+//     text-align: center;
+//     border-radius: 30px;
+//     .project_resalted{
+//         animation:color-change-names 5s linear infinite alternate both;
+//         font-weight: 700;
+//     }
+//     @include tablet{
+//         display: none;
+//     }
+//    }
+//     .part_hover{
+//         background-color: #141414a4;
+//         height: 100%;
+//         width: 100%;
+//         top: 100%;
+//         position: absolute;
+//         transition: transform 250ms;
+//         display: flex;
+//         align-items: center;
+//         flex-direction: column;
+//         justify-content: space-evenly;
+
+//         .part_button{      
+//             box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             &:hover{
+//                 background-color: #ececec7e;
+//             }
+//             .part_icon{
+//                 color:  white;
+//                 animation:color-change-names 5s linear infinite alternate both;
+//                 height: 50%;
+//                 width: 50%;
+//             }
+//             @include tablet{
+//                 box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+//             }
+//         }
+//         .hover_cirle{
+//             width: 4rem;
+//             height: 4rem;
+//             background-color: white;
+//             border-radius: 100%;
+//             @include tablet{
+//                 width: 4rem;
+//                 height: 4rem;
+//                 animation: none;
+//             }
+//         }
+//         @include tablet{
+//             position: relative;
+//             width: 11rem;
+//             background-color: transparent;
+//             top: 0;
+//         }
+//     }
+//     @include tablet{
+//         width:90%;
+//         height: 8rem;
+//         display: flex;
+//         align-items: center;
+//         justify-content: flex-end;
+//     }
+// }
+// .part2{
+//     margin: 5px;
+// }
+// .sub_icon{
+//     cursor: pointer;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 100%;
+//     height: 100%;
+// }
+// .part1{
+//     background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_1.png");
+//     background-position: center;
+//     background-size: cover;
+//     &:hover{
+//         background: linear-gradient(to bottom, #000000d6, transparent), url("../../assets/svg-p/project_1.png");
+//         background-position: center;
+//         background-size: cover;
+//     }
+//     @include tablet{
+//         background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_1.png");
+//         background-position: center;
+//         background-size: cover;
+//     }
+// }
+// .part2{
+//     background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_2.svg");
+//     background-position: center;
+//     background-size: cover;
+//     &:hover{
+//         background: linear-gradient(to bottom, #000000d6, transparent), url("../../assets/svg-p/project_2.svg");
+//         background-position: center;
+//         background-size: cover;
+//     }
+//     @include tablet{
+//         background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_2.svg");
+//         background-position: center;
+//         background-size: cover;
+//     }
+// }
+// .part3{
+//     background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_3.png");
+//     background-position: center;
+//     background-size: cover;
+//     &:hover{
+//         background: linear-gradient(to bottom, #000000d6, transparent), url("../../assets/svg-p/project_3.png");
+//         background-position: center;
+//         background-size: cover;
+//     }
+//     @include tablet{
+//         background: linear-gradient(to bottom, transparent, transparent), url("../../assets/svg-p/project_3.png");
+//         background-position: center;
+//         background-size: cover;
+//     }
+// }

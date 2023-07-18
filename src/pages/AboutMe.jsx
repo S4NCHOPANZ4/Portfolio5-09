@@ -9,7 +9,7 @@ import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 //pdf
 import resume from '../assets/resume/Juan_Buitrago.pdf'
 
-import '../styles/aboutMe/index.css'
+import '../styles/aboutMe/index.scss'
 
 
 
@@ -53,7 +53,7 @@ const AboutMe = () => {
       <div className='aboutMe_title'>
         <AnimatedText 
         clase={'AboutMe_title_cc'}
-        text={'About Me 🐵'}/>
+        text={'About Me 🗿'}/>
       </div>
       <div className='aboutMe_body'>
         <motion.div
@@ -91,6 +91,7 @@ const AboutMe = () => {
           </motion.div>
         </div>
       </div>
+      
     </div>
   )
 }

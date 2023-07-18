@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import '../styles/toolKit/index.css'
+import '../styles/toolKit/index.scss'
 import AnimatedText from '../components/AnimatedText';
 import Cube from '../components/AnimatedCube';
 

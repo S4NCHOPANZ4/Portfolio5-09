@@ -16,12 +16,8 @@ $cube_sizes_Rw: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
     flex-direction: column;
-    @include tablet{
-        
 
-    }
 }
 .aboutMe_body{
     position: relative;
@@ -104,6 +100,7 @@ $cube_sizes_Rw: 4rem;
     align-items: center;
     justify-content: center;
     align-items: center;
+
     @include tablet{
         width: 100vw;
     }
@@ -132,8 +129,7 @@ $cube_sizes_Rw: 4rem;
     }
 }
 .aboutMe_title{
-    margin-top: 2rem;
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -144,9 +140,8 @@ $cube_sizes_Rw: 4rem;
         padding-left: 0;
     }
     .AboutMe_title_cc{
-        font-weight: 700;
+        font-weight: 100;
         font-size: 1.8rem;
-
         animation:color-change-names 5s linear infinite alternate both;
         @include tablet{
             margin-bottom: 2rem;
