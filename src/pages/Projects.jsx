@@ -89,10 +89,10 @@ const Projects = () => {
           </div>
           <div className="project_desc">
             <p>
-              Film Folia is a dynamic web application that seamlessly merges
-              MongoDB, React, Tailwind CSS, Node.js and Express, creating a
+              React App that seamlessly merges
+              MongoDB, Tailwind CSS, Node.js and Express, creating a
               space where movie fans around the world can share their thoughts
-              and initiate discussions around movies.
+              and discussions.
             </p>
             <div className="project_links">
               <RxOpenInNewWindow
@@ -120,9 +120,9 @@ const Projects = () => {
           </div>
           <div className="project_desc">
             <p>
-              Explore our innovative React e-commerce app. Shop securely with
+              React e-commerce app. Shop securely with
               PayPal and Stripe. Discover a wide range of dummy data products as
-              we work to perfect the ultimate shopping destination (under
+              we work to perfect the shopping destination (under
               development).
 
             </p>
