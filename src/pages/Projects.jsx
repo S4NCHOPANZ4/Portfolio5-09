@@ -120,7 +120,7 @@ const Projects = () => {
           </div>
           <div className="project_desc">
             <p>
-              Combining the power of React, JavaScript, and TypeScript, we
+              Combining the power of React, JavaScript, and Tailwind, we
               harness the Shazam Core API to craft an immersive audio discovery
               platform. Elevate your music experience and explore tracks
               seamlessly, redefining audio exploration, just like Spotify.
