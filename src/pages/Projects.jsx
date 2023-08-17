@@ -120,8 +120,10 @@ const Projects = () => {
           </div>
           <div className="project_desc">
             <p>
-              React music app. use the shazam core api to listen to and search
-              for any song available in the shazam core API repertoire
+              Combining the power of React, JavaScript, and TypeScript, we
+              harness the Shazam Core API to craft an immersive audio discovery
+              platform. Elevate your music experience and explore tracks
+              seamlessly, redefining audio exploration, just like Spotify.
             </p>
             <div className="project_links">
               <RxOpenInNewWindow
