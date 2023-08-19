@@ -315,6 +315,9 @@ button {
             &:hover {
                 border-color: rgb(255, 134, 47);
             }
+            @include tablet {
+                width: 90%;
+            }
         }
 
         .field {
@@ -345,6 +348,9 @@ button {
             &:hover {
                 border-color: rgb(255, 134, 47);
 
+            }
+            @include tablet {
+                width: 87%;
             }
         }
 

@@ -26,10 +26,7 @@ $cube_sizes_Rw: 4rem;
     justify-content: center;
     @include tablet{
         flex-direction: column;
-
-        height: 80vh;
-
-
+        height: 100vh;
     }
 }
 .aboutMe_sub1{

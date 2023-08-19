@@ -22,7 +22,7 @@ const ParallaxC = () => {
 // </div>
   return (
     <>
-      <Parallax className="super_parallax" pages={6.44} ref={ref}>
+      <Parallax className="super_parallax" pages={5.9} ref={ref}>
         <div className="NavBar">
           <div>
             <p onClick={() => ref.current.scrollTo(1)}>Projects</p>
@@ -48,28 +48,37 @@ const ParallaxC = () => {
           <div className="toolkit_img_sep">
             <img src={sep} alt="" />
           </div>
-          <div style={{...stylesCenter}}>
+          <div  style={
+            {
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "100%",
+            }
+          }>
             <AboutMe />
           </div>
         </ParallaxLayer>
         <ParallaxLayer
           className="projects_parallax"
           style={{ background: "#F9F9F9" }}
-          offset={2.49}
-          factor={2}
+          offset={2.5}
+          factor={1.2}
         >
           <Projects />
         </ParallaxLayer>
 
         <ParallaxLayer style={{ backgroundColor: "#FAFAFA" }} 
-        offset={4.45}>
+        offset={3.5}>
           <div style={stylesCenter}>
             <Toolkit />
           </div>
         </ParallaxLayer>
 
         <ParallaxLayer style={{ backgroundColor: "#FAFAFA" }} 
-        offset={5.44}>
+        offset={4.5}
+        factor={1.4}
+        >
 
           <div style={stylesCenter}>
             <Form />
