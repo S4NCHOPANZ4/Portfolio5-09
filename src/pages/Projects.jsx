@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 //img
 import "../styles/projects/index.scss";
@@ -8,12 +8,6 @@ import filmFolia from "../assets/project-icons/film-folia-icon.png";
 import leagueTrackerIcon from "../assets/project-icons/lt.png";
 import pomodoroIcon from "../assets/project-icons/mode1_icon.png";
 import stereoIcon from "../assets/project-icons/stereoh_icon.png";
-import FilmFolia from "../assets/svg-p/FilmFolia.png";
-import LeagueTraker from "../assets/svg-p/leaguetraker.png";
-import NewEgg from "../assets/svg-p/newegg.png";
-import Pomofocus from "../assets/svg-p/pomofocus.png";
-import Stereo from "../assets/svg-p/stereo.png";
-
 import { BiLogoReact } from "react-icons/bi";
 import { TbApi } from "react-icons/tb";
 import { FaSass } from "react-icons/fa";
@@ -26,12 +20,10 @@ import {
 import { GoArrowRight, GoArrowLeft } from "react-icons/go";
 import { GrNode } from "react-icons/gr";
 import { FaCcStripe, FaCcPaypal } from "react-icons/fa";
-import { BsCameraVideoFill } from "react-icons/bs";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import { AiFillGithub } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination } from "swiper/modules";
-import { Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/free-mode";
