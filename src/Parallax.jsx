@@ -25,13 +25,13 @@ const ParallaxC = () => {
       <Parallax className="super_parallax" pages={5.9} ref={ref}>
         <div className="NavBar">
           <div>
-            <p onClick={() => ref.current.scrollTo(1)}>Projects</p>
+            <p onClick={() => ref.current.scrollTo(2.6)}>Projects</p>
           </div>
           <div>
-            <p onClick={() => ref.current.scrollTo(3)}>About me</p>
+            <p onClick={() => ref.current.scrollTo(1.5)}>About me</p>
           </div>
           <div>
-            <p onClick={() => ref.current.scrollTo(4)}>Contact me</p>
+            <p onClick={() => ref.current.scrollTo(4.7)}>Contact me</p>
           </div>
         </div>
 
