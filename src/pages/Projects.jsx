@@ -53,6 +53,10 @@ const breakpoints = {
 };
 
 const Projects = () => {
+
+
+  
+
   const projects = [
     {
       demo: "film-folia",
@@ -163,16 +167,20 @@ const Projects = () => {
   );
 };
 
-const DynamicComponent = ({ componentString, index }) => {
-  const Component = eval(componentString);
-  return (
-    <>
-      <Component className="tools" size={35} key={componentString} />
-    </>
-  );
-};
 
 const ProjectCard = ({ data, index }) => {
+
+
+  const DynamicComponent = ({ componentString, index }) => {
+    const Component = eval(componentString);
+    return (
+      <>
+        <Component className="tools" size={35} key={componentString} />
+      </>
+    );
+  };
+  
+
   const goToDemo = (deployment, urlplus) => {
     window.open(
       `https://${deployment}.vercel.app${urlplus ? urlplus : ""}`,
