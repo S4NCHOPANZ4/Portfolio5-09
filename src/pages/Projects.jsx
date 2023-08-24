@@ -99,12 +99,12 @@ const Projects = () => {
       icon: newEggIcon,
       background: newEggImg,
       toolkit: [
-        "BiLogoReact",
-        "GrNode",
-        "BiLogoTailwindCss",
-        "BiLogoMongodb",
-        "FaCcStripe",
-        "FaCcPaypal",
+        BiLogoReact,
+        GrNode,
+        BiLogoTailwindCss,
+        BiLogoMongodb,
+        FaCcStripe,
+        FaCcPaypal,
       ],
     },
     {
@@ -115,7 +115,7 @@ const Projects = () => {
         "Boost your productivity and stay focused with this React app inspired by the Pomodoro Technique",
       icon: pomodoroIcon,
       background: pomodorosImg,
-      toolkit: ["BiLogoReact", "BiLogoTypescript", "FaSass"],
+      toolkit: [BiLogoReact, BiLogoTypescript, FaSass],
     },
     {
       demo: "lol-tracker-v1",
@@ -125,7 +125,7 @@ const Projects = () => {
         "React app utilizing the Riot Games API to explore match information, discover top players on different servers, and view your own or your friends' matches.",
       icon: leagueTrackerIcon,
       background: loltrackerImg,
-      toolkit: ["BiLogoReact", "BiLogoTypescript", "FaSass", "TbApi"],
+      toolkit: [BiLogoReact, BiLogoTypescript, FaSass, TbApi],
     },
   ];
 
