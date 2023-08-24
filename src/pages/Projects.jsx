@@ -15,18 +15,18 @@ import filmFolia from "../assets/project-icons/film-folia-icon.png";
 import leagueTrackerIcon from "../assets/project-icons/lt.png";
 import pomodoroIcon from "../assets/project-icons/mode1_icon.png";
 import stereoIcon from "../assets/project-icons/stereoh_icon.png";
-import { BiLogoReact } from "react-icons/bi";
 import { TbApi } from "react-icons/tb";
 import { FaSass } from "react-icons/fa";
 import {
+  BiLogoReact,
   BiLogoTypescript,
   BiLogoTailwindCss,
   BiLogoMongodb,
   BiLogoJavascript,
 } from "react-icons/bi";
-import { GoArrowRight, GoArrowLeft } from "react-icons/go";
 import { GrNode } from "react-icons/gr";
 import { FaCcStripe, FaCcPaypal } from "react-icons/fa";
+import { GoArrowRight  } from "react-icons/go";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import { AiFillGithub } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -67,12 +67,12 @@ const Projects = () => {
       icon: filmFolia,
       background: filmFoliaImg,
       toolkit: [
-        "BiLogoJavascript",
-        "BiLogoReact",
-        "TbApi",
-        "BiLogoTailwindCss",
-        "BiLogoMongodb",
-        "GrNode",
+        BiLogoJavascript,
+        BiLogoReact, // Utiliza el componente real en lugar de la cadena "BiLogoReact"
+        TbApi,
+        BiLogoTailwindCss,
+        BiLogoMongodb,
+        GrNode,
       ],
     },
     {
