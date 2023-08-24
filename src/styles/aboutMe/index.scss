@@ -17,7 +17,9 @@ $cube_sizes_Rw: 4rem;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    @include tablet{
+        flex-direction: column;
+    }
 }
 .aboutMe_body{
     position: relative;
