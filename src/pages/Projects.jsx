@@ -94,7 +94,7 @@ const Projects = () => {
       ],
     },
     {
-      demo: "tik-tok-wipe-load.vercel",
+      demo: "tik-tok-wipe-load",
       github: "S4NCHOPANZ4/TikTokWipeLoad",
       title: "Wipe Load",
       description:
