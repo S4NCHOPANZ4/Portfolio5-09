@@ -9,12 +9,15 @@ import stereoHeartsImg from "../assets/svg-p/stereo.png";
 import newEggImg from "../assets/svg-p/newegg.png";
 import pomodorosImg from "../assets/svg-p/pomofocus.png";
 import loltrackerImg from "../assets/svg-p/leaguetraker.png";
+import tiktokImg from "../assets/svg-p/tiktok.png";
 
 import newEggIcon from "../assets/project-icons/newEggIcon.png";
 import filmFolia from "../assets/project-icons/film-folia-icon.png";
 import leagueTrackerIcon from "../assets/project-icons/lt.png";
 import pomodoroIcon from "../assets/project-icons/mode1_icon.png";
 import stereoIcon from "../assets/project-icons/stereoh_icon.png";
+import tiktok_icon from "../assets/project-icons/tiktok_icon.png"
+
 import { TbApi } from "react-icons/tb";
 import { FaSass } from "react-icons/fa";
 import {
@@ -88,6 +91,20 @@ const Projects = () => {
         "BiLogoReact",
         "BiLogoTailwindCss",
         "TbApi",
+      ],
+    },
+    {
+      demo: "tik-tok-wipe-load.vercel",
+      github: "S4NCHOPANZ4/TikTokWipeLoad",
+      title: "Wipe Load",
+      description:
+        "Experience watermark-free TikTok videos effortlessly with this React and TypeScript app. Utilizing open APIs and Tailwind CSS, remove watermarks, download in MP4 or MP3 formats. Elevate your TikTok content now!",
+      icon: tiktok_icon,
+      background: tiktokImg,
+      toolkit: [
+        BiLogoReact,
+        BiLogoTailwindCss,
+        BiLogoTypescript
       ],
     },
     {
