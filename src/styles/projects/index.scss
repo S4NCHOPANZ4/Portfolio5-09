@@ -207,9 +207,11 @@ $cube_sizes_Rw: 4rem;
 .project-container{
     cursor: pointer;
     height: 380px;
-    width: 450px;
+    width: 100%;
     overflow: hidden;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 5px;
     @media (max-width: 500px) {
         width: 90vw;
         height: 60vh;
@@ -322,8 +324,10 @@ $cube_sizes_Rw: 4rem;
     justify-content: center;
     background-color: rgba(236, 236, 236, 0.342);
     height: 380px;
-    width: 450px;
+    width: 100%;
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 5px;
     @media (max-width: 500px) {
         width: 90vw;
         height: 60vh;
@@ -336,4 +340,7 @@ $cube_sizes_Rw: 4rem;
 
 .mySwiper .swiper-button-next {
     color: rgba(224, 224, 224, 0.7);
+}
+.swiper-horizontal{
+    padding: 5px;
 }

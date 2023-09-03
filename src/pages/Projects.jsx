@@ -45,7 +45,7 @@ const breakpoints = {
     slidesPerView: 1,
     spaceBetween: 20,
   },
-  800: {
+  720: {
     slidesPerView: 1.6,
     spaceBetween: 40,
   },
@@ -57,8 +57,6 @@ const breakpoints = {
 
 const Projects = () => {
 
-
-  
 
   const projects = [
     {
@@ -171,6 +169,7 @@ const Projects = () => {
                   <ProjectCard data={element} index={index} />
               </SwiperSlide>
             );
+            
           })}
           <SwiperSlide>
             <div className="comming-soon">

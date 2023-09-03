@@ -51,6 +51,7 @@ const Backgroundc = () => {
         }}>
         </ParallaxLayer>
         <ParallaxLayer offset={0}
+
         factor={1.01}
         speed={0}
         style={{

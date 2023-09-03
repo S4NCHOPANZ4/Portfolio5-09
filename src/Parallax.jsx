@@ -17,9 +17,7 @@ const ParallaxC = () => {
     alignItems: "center",
     height: "100%",
   };
-//   <div className="toolkit_img_sep">
-//   <img src={sep2} alt="" />
-// </div>
+
   return (
     <>
       <Parallax className="super_parallax" pages={5.9} ref={ref}>
@@ -69,7 +67,7 @@ const ParallaxC = () => {
         </ParallaxLayer>
 
         <ParallaxLayer style={{ backgroundColor: "#FAFAFA" }} 
-        offset={3.5}>
+        offset={3.55}>
           <div style={stylesCenter}>
             <Toolkit />
           </div>
@@ -84,7 +82,10 @@ const ParallaxC = () => {
             <Form />
           </div>
         </ParallaxLayer>
+
+        
       </Parallax>
+
     </>
   );
 };
