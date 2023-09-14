@@ -10,7 +10,7 @@ import newEggImg from "../assets/svg-p/newegg.png";
 import pomodorosImg from "../assets/svg-p/pomofocus.png";
 import loltrackerImg from "../assets/svg-p/leaguetraker.png";
 import tiktokImg from "../assets/svg-p/tiktok.png";
-import FitHubImg from "../assets/svg-p/FitHub.png"
+import FitHubImg from "../assets/svg-p/FItHub.png"
 
 import newEggIcon from "../assets/project-icons/newEggIcon.png";
 import filmFolia from "../assets/project-icons/film-folia-icon.png";
