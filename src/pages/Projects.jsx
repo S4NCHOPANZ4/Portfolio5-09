@@ -10,6 +10,7 @@ import newEggImg from "../assets/svg-p/newegg.png";
 import pomodorosImg from "../assets/svg-p/pomofocus.png";
 import loltrackerImg from "../assets/svg-p/leaguetraker.png";
 import tiktokImg from "../assets/svg-p/tiktok.png";
+import FitHubImg from "../assets/svg-p/FitHub.png"
 
 import newEggIcon from "../assets/project-icons/newEggIcon.png";
 import filmFolia from "../assets/project-icons/film-folia-icon.png";
@@ -17,6 +18,7 @@ import leagueTrackerIcon from "../assets/project-icons/lt.png";
 import pomodoroIcon from "../assets/project-icons/mode1_icon.png";
 import stereoIcon from "../assets/project-icons/stereoh_icon.png";
 import tiktok_icon from "../assets/project-icons/tiktok_icon.png"
+import FitHubIcon from "../assets/svg/Icon_FitHub.svg"
 
 import { TbApi } from "react-icons/tb";
 import { FaSass } from "react-icons/fa";
@@ -60,6 +62,22 @@ const Projects = () => {
 
   const projects = [
     {
+      demo: "fit-hub-taupe",
+      github: "S4NCHOPANZ4/FitHub",
+      title: "Fithub",
+      description: " React TypeScript and adorned with the elegance of Tailwind CSS. Our app is powered by not one, not two, but three distinct APIs, seamlessly integrated to offer an unparalleled fitness experience.",
+      icon: FitHubIcon,
+      background: FitHubImg,
+      toolkit: [
+        BiLogoTypescript,
+        BiLogoReact, 
+        TbApi,
+        BiLogoTailwindCss,
+      ],
+
+    }
+    ,
+    {
       demo: "film-folia",
       github: "S4NCHOPANZ4/FilmFolia",
       title: "Film Folia",
@@ -69,7 +87,7 @@ const Projects = () => {
       background: filmFoliaImg,
       toolkit: [
         BiLogoJavascript,
-        BiLogoReact, // Utiliza el componente real en lugar de la cadena "BiLogoReact"
+        BiLogoReact, 
         TbApi,
         BiLogoTailwindCss,
         BiLogoMongodb,
