@@ -30,6 +30,7 @@ import {
   BiLogoTailwindCss,
   BiLogoMongodb,
   BiLogoJavascript,
+  BiLogoCss3
 } from "react-icons/bi";
 import { GrNode } from "react-icons/gr";
 import { FaCcStripe, FaCcPaypal } from "react-icons/fa";
@@ -74,7 +75,10 @@ const Projects = () => {
         BiLogoTypescript,
         BiLogoReact, 
         TbApi,
+        BiLogoCss3,
         BiLogoTailwindCss,
+        BiLogoMongodb,
+        GrNode,
       ],
 
     },
