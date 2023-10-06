@@ -11,6 +11,7 @@ import pomodorosImg from "../assets/svg-p/pomofocus.png";
 import loltrackerImg from "../assets/svg-p/leaguetraker.png";
 import tiktokImg from "../assets/svg-p/tiktok.png";
 import FitHubImg from "../assets/svg-p/FItHub.png"
+import CaseJoltImg from "../assets/svg-p/CaseJolt.png"
 
 import newEggIcon from "../assets/project-icons/newEggIcon.png";
 import filmFolia from "../assets/project-icons/film-folia-icon.png";
@@ -19,6 +20,7 @@ import pomodoroIcon from "../assets/project-icons/mode1_icon.png";
 import stereoIcon from "../assets/project-icons/stereoh_icon.png";
 import tiktok_icon from "../assets/project-icons/tiktok_icon.png"
 import FitHubIcon from "../assets/svg/Icon_FitHub.svg"
+import CaseJoltIcon from "../assets/svg-bg/casejolt_icon.svg"
 
 import { TbApi } from "react-icons/tb";
 import { FaSass } from "react-icons/fa";
@@ -61,6 +63,21 @@ const Projects = () => {
 
 
   const projects = [
+    {
+      demo: "casejolt",
+      github: "S4NCHOPANZ4/SteamLink",
+      title: "CaseJolt",
+      description: "React application in TypeScript, powered by a Node.js server. It employs Tailwind CSS and CSS for styling, ensuring a sleek and responsive design. The project optimizes performance through asynchronous loading logic.",
+      icon: CaseJoltIcon,
+      background: CaseJoltImg,
+      toolkit: [
+        BiLogoTypescript,
+        BiLogoReact, 
+        TbApi,
+        BiLogoTailwindCss,
+      ],
+
+    },
     {
       demo: "fit-hub-taupe",
       github: "S4NCHOPANZ4/FitHub",
