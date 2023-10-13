@@ -7,6 +7,7 @@ const Cube = ({animateObj, styled, dragLimits, clase}) => {
 
   const cardVariants = {
     offscreen: { 
+
       
       rotate: -360,
     },
